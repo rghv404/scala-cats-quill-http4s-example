@@ -1,0 +1,9 @@
+# FROM base-jre:latest
+# COPY app.jar /app.jar
+# EXPOSE 8080
+# ENTRYPOINT ["java", "-jar", "/app.jar"]
+FROM base-jre:latest
+COPY 1/opt/docker/lib/*.jar /lib/
+COPY 2/opt/docker/lib/*.jar /app.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-cp", "/app.jar:/lib/*", "io.ssc.export.api.Main"]

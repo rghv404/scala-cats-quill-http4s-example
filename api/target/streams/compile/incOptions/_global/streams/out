@@ -1,0 +1,32 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /home/rghv404/GitRepos/ExportAPI/api/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$$typecreator2$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$$typecreator1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$anon$lazy$macro$5$1$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$EntityDecoderOps.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$anon$lazy$macro$5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$$typecreator2$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$$typecreator1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$anon$lazy$macro$5$1$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$EntityDecoderOps.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$anon$lazy$macro$5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$$typecreator2$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$$typecreator1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$anon$lazy$macro$5$1$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$EntityDecoderOps.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains$anon$lazy$macro$5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	JobRoutes$MissingDomains.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /home/rghv404/GitRepos/ExportAPI/api/target/scala-2.13/classes.bak[0m

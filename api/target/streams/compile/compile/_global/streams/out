@@ -1,0 +1,24 @@
+[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:4:13: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport cats._[0m
+[0m[[0m[0minfo[0m] [0m[0m            ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:6:23: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport cats.implicits._[0m
+[0m[[0m[0minfo[0m] [0m[0m                      ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:7:32: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.chrisdavenport.fuuid.FUUID[0m
+[0m[[0m[0minfo[0m] [0m[0m                               ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:9:19: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.Status[0m
+[0m[[0m[0minfo[0m] [0m[0m                  ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:10:26: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.Status.BadRequest[0m
+[0m[[0m[0minfo[0m] [0m[0m                         ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:11:23: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport shapeless.Lazy.apply[0m
+[0m[[0m[0minfo[0m] [0m[0m                      ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:17:50: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.{DecodeFailure, EntityDecoder, EntityEncoder}[0m
+[0m[[0m[0minfo[0m] [0m[0m                                                 ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:19:26: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.circe.{jsonEncoderOf, jsonOf}[0m
+[0m[[0m[0minfo[0m] [0m[0m                         ^[0m

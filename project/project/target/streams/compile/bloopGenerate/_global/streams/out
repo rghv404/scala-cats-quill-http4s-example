@@ -1,0 +1,4 @@
+[debug] [exportapi-build-build] Classpath dependencies List()
+[debug] [exportapi-build-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'exportapi-build-build' to '/home/rghv404/GitRepos/ExportAPI/project/project/.bloop/exportapi-build-build.json'
+[success] Generated .bloop/exportapi-build-build.json
