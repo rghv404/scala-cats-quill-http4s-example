@@ -12,6 +12,7 @@ object Dependencies {
         val fuuid        = "0.6.0"
         val http4s       = "0.21.23"
         val log4cats     = "1.3.1"
+        val mtlCore      = "0.7.1"
         val opentracing  = "3.1.0"
         val pureconfig   = "0.15.0"
         val quillV       = "3.7.1"
@@ -59,7 +60,8 @@ object Dependencies {
     lazy val weaver         = library("com.disneystreaming", _, _)
 
     lazy val catsCore           = typelevel("cats-core", Versions.cats)
-//    lazy val catsEffect         = typelevel("cats-effect", Versions.catsEffect)
+    lazy val catsEffect         = typelevel("cats-effect", Versions.catsEffect)
+    lazy val catsMtl            = typelevel("cats-mtl-core", Versions.mtlCore)
     lazy val catsFree           = typelevel("cats-free", Versions.cats)
     lazy val catsKernel         = typelevel("cats-kernel", Versions.cats)
     lazy val circeCore          = circe("circe-core", Versions.circe)
@@ -132,7 +134,7 @@ object Dependencies {
     lazy val weaverScalaCheck  = weaver("weaver-scalacheck", Versions.weaver)
 
     // Logical grouping for dependencies
-    lazy val catsDeps         = Seq(catsCore, /*catsEffect,*/ catsFree, catsKernel)
+    lazy val catsDeps         = Seq(catsCore, catsEffect, catsFree, catsKernel, catsMtl)
     lazy val circeDeps        = Seq(circeCore, circeFs2, circeGeneric, circeOptics, circeRefined, circeShapes)
     lazy val doobieDeps       = Seq(doobieCore, doobieFree, doobieHikari, doobiePostgres, doobieQuill)
     lazy val fuuidDeps        = Seq(fuuidCirce, fuuidCore, fuuidDoobie)

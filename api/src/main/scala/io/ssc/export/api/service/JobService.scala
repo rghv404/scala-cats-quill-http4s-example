@@ -1,8 +1,12 @@
 package io.ssc.`export`.api.service
 
+import cats.{Functor, MonadError}
 import cats.data.EitherT
+import cats.implicits._
+import cats.mtl.{ApplicativeHandle, FunctorRaise}
+import cats.mtl.implicits._
 import io.ssc.`export`.api.database.JobRepository
-import io.ssc.`export`.api.model.{Customer, JobError, JobResponse, JobType, MissingDomains}
+import io.ssc.`export`.api.model.{Customer, CustomerNotFoundError, FileNotFoundError, JobError, JobResponse, JobType, MissingDomains, RequestNotUniqueError}
 
 import java.util.UUID
 
@@ -18,26 +22,37 @@ class JobService[F[_]](repo: JobRepository[F]) {
   6.
    */
 
-//  type EitherApp[A] = EitherT[F, JobError, A]
-//
-//  type Result[A] = ReaderT[EitherApp, ]
 
-  def findCustomerId(customerId: UUID): EitherT[F, JobError, Customer] = ??? //F[Either[_, UUID]]
+  type EitherApp[A] = EitherT[F, JobError, A]
 
-  def ensureInputFileExists(fileName: String): EitherT[F, JobError, Unit] = ???
+  def findCustomerId(customerId: UUID): EitherApp[Customer] = ???
 
-  def ensureUniqueRequest(customerId: UUID, fileName: String): EitherT[F, JobError, Unit] = ???
+  def ensureInputFileExists(fileName: String): EitherApp[Unit] = ???
 
-  // job Type should be concrete
-  def submitJob(jobType: JobType)(databricksClient: Any): EitherT[F, JobError, Int] = ???
+  def ensureUniqueRequest(customerId: UUID, fileName: String): EitherApp[Unit] = ???
 
-  // does some stateful work
-  def insertJobId(jobId: Int): F[JobResponse] = ???
+  def submitJob(jobType: JobType): EitherApp[Int] = ???
 
-  def run(customerId: UUID, domains: MissingDomains) = for {
-    customer <- findCustomerId[F](customerId)
-  } yield
+  def insertJobId(jobId: Int): EitherApp[JobResponse] = ???
 
+  def run(customerId: UUID, fileName: String, jobType: JobType) (
+    implicit ME: MonadError[F, Throwable],
+    functorRaise: FunctorRaise[F, JobError]
+  )= for {
+      customer <- findCustomerId(customerId) // either customer exist or not exist error
+      _ <- ensureInputFileExists(fileName) // either file exists or not exist error
+      _ <- ensureUniqueRequest(customerId, fileName) // either uniquer request or a duplicate request error
+      jobId <- submitJob(jobType)
+      resp <- insertJobId(jobId)
+    } yield resp
+//    res.handleWith({
+//      case Left(CustomerNotFoundError) => "Customer Id not found".asLeft
+//      case Left(RequestNotUniqueError) => "Customer Id not found".asLeft
+//      case Left(FileNotFoundError) => "Uploaded File not found".asLeft
+//      case Right(resp: JobResponse) => s"Nice! $resp".asRight
+//    }).recoverWith({
+//      case e: Throwable => ME.raiseError(new RuntimeException("Something terribly wrong has hapened", e))
+//    })
 }
 
 object JobService {

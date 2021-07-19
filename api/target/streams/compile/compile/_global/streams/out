@@ -1,24 +1,182 @@
-[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:4:13: Unused import[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Config.scala:14:83: implicit error;[0m
+[0m[[0m[31merror[0m] [0m[0m[31m![0m[34mI[0m [33mreader[0m: [32mLazy[DerivedConfigReader[ExportApiConfig]][0m[0m
+[0m[[0m[31merror[0m] [0m[0m  [34mcould not find Lazy implicit value of type pureconfig.generic.DerivedConfigReader[io.ssc.export.api.Config.ExportApiConfig][0m[0m
+[0m[[0m[31merror[0m] [0m[0m  [0m
+[0m[[0m[31merror[0m] [0m[0m――[31mDerivedConfigReader.productReader[0m invalid because[0m
+[0m[[0m[31merror[0m] [0m[0m  [31m![0m[34mI[0m [33mcc[0m: [32mLazy[MapShapedReader[ExportApiConfig, Repr, DefaultRepr]][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    [34mcould not find Lazy implicit value of type pureconfig.generic.MapShapedReader[io.ssc.export.api.Config.ExportApiConfig,Repr,DefaultRepr][0m[0m
+[0m[[0m[31merror[0m] [0m[0m    [0m
+[0m[[0m[31merror[0m] [0m[0m  [34m⋮[0m[0m
+[0m[[0m[31merror[0m] [0m[0m――――[31mConfigReader.exportedReader[0m invalid because[0m
+[0m[[0m[31merror[0m] [0m[0m    [31m![0m[34mI[0m [33mexported[0m: [32mExported[ConfigReader[DatabaseConfig]][0m[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m――[31mDerivedConfigReader.coproductReader[0m invalid because[0m
+[0m[[0m[31merror[0m] [0m[0m  [31m![0m[34mI[0m [33mgen[0m: [32mLabelledGeneric.Aux[ExportApiConfig, Repr][0m[0m
+[0m[[0m[31merror[0m] [0m[0m  [34m⋮[0m[0m
+[0m[[0m[31merror[0m] [0m[0m――――[31mLabelledGeneric.materializeCoproduct[0m invalid because[0m
+[0m[[0m[31merror[0m] [0m[0m    [31m![0m[34mI[0m [33mgen[0m: [32mGeneric.Aux[ExportApiConfig, V][0m[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m――[31mDerivedConfigReader.anyValReader[0m invalid because[0m
+[0m[[0m[31merror[0m] [0m[0m  [31m![0m[34mI[0m [33mev[0m: [32mExportApiConfig <:< AnyVal[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    [34mCannot prove that io.ssc.export.api.Config.ExportApiConfig <:< AnyVal.[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    [0m
+[0m[[0m[31merror[0m] [0m[0m  [34m⋮[0m[0m
+[0m[[0m[31merror[0m] [0m[0m――[31mDerivedConfigReader.tupleReader[0m invalid because[0m
+[0m[[0m[31merror[0m] [0m[0m  [31m![0m[34mI[0m [33mevidence$1[0m: [32mIsTuple[ExportApiConfig][0m[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val exportApiConfigReader: ConfigReader[ExportApiConfig] = deriveReader[ExportApiConfig][0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                  ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Config.scala:3:17: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.circe.Decoder[0m
+[0m[[0m[0minfo[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:51:75: value io of type org.http4s.rho.swagger.SwaggerSupport[cats.effect.IO] does not take type parameters.[0m
+[0m[[0m[31merror[0m] [0m[0m      routes                  =  Router("/v1" -> new MyRoutes[F](ioSwagger[F]).toRoutes(swaggerUiRhoMiddleware),[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:52:80: value io of type org.http4s.rho.swagger.SwaggerSupport[cats.effect.IO] does not take type parameters.[0m
+[0m[[0m[31merror[0m] [0m[0m                                        "/v1/run" -> new JobRoutes[F](ioSwagger[F], jobService).toRoutes(swaggerUiRhoMiddleware)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:57:48: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m  [31mAny[0m|[32mKleisli[F, Request[F], Response[F]][0m[0m
+[0m[[0m[31merror[0m] [0m[0m                                  .withHttpApp(routes)[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:3:18: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport cats.data.EitherT[0m
+[0m[[0m[0minfo[0m] [0m[0m                 ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:14:29: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.implicits._[0m
+[0m[[0m[0minfo[0m] [0m[0m                            ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:16:29: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.implicits._[0m
+[0m[[0m[0minfo[0m] [0m[0m                            ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:19:34: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.ssc.`export`.api.model.JobError[0m
+[0m[[0m[0minfo[0m] [0m[0m                                 ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:21:37: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.typelevel.log4cats.slf4j.Slf4jLogger[0m
+[0m[[0m[0minfo[0m] [0m[0m                                    ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:22:33: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport pureconfig.ConfigConvert.fromReaderAndWriter[0m
+[0m[[0m[0minfo[0m] [0m[0m                                ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:23:19: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport pureconfig.ConfigSource[0m
+[0m[[0m[0minfo[0m] [0m[0m                  ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:25:25: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport scala.concurrent.ExecutionContext[0m
+[0m[[0m[0minfo[0m] [0m[0m                        ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:26:42: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport scala.concurrent.ExecutionContext.global[0m
+[0m[[0m[0minfo[0m] [0m[0m                                         ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:39:7: parameter value evidence$3 in method createServer is never used[0m
+[0m[[0m[0minfo[0m] [0m[0m  def createServer[F[_] : ContextShift : ConcurrentEffect : Timer]: Resource[F, H4Server[F]] = {[0m
+[0m[[0m[0minfo[0m] [0m[0m      ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/Main.scala:39:7: parameter value evidence$1 in method createServer is never used[0m
+[0m[[0m[0minfo[0m] [0m[0m  def createServer[F[_] : ContextShift : ConcurrentEffect : Timer]: Resource[F, H4Server[F]] = {[0m
+[0m[[0m[0minfo[0m] [0m[0m      ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:25:65: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m  def find(id: UUID): Result[RunQueryResult[Customer]] = ctx.run(customer.filter(_.customer_id == lift(id)))[0m
+[0m[[0m[0minfo[0m] [0m[0m                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:27:92: Can't find an implicit `InsertMeta` for type `io.ssc.export.api.model.Request`[0m
+[0m[[0m[31merror[0m] [0m[0m  def insert(req: Request): Result[RunActionReturningResult[UUID]] = ctx.run(request.insert(lift(req)).returning(_.request_id))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:62:3: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m  [31mUnit[0m|[32mEitherT[F, JobError, Request][0m[0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[0minfo[0m] [0m[0mUnit <: cats.data.EitherT[F,io.ssc.export.api.model.JobError,io.ssc.export.api.model.Request]?[0m
+[0m[[0m[0minfo[0m] [0m[0mfalse[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:5:21: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.getquill.{ActionReturning, EntityQuery, Insert, SnakeCase}[0m
+[0m[[0m[0minfo[0m] [0m[0m                    ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:5:51: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.getquill.{ActionReturning, EntityQuery, Insert, SnakeCase}[0m
+[0m[[0m[0minfo[0m] [0m[0m                                                  ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:5:59: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.getquill.{ActionReturning, EntityQuery, Insert, SnakeCase}[0m
+[0m[[0m[0minfo[0m] [0m[0m                                                          ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:6:45: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.ssc.`export`.api.model.{Customer, CustomerNotFoundError, JobError, JobType, Queued, Request}[0m
+[0m[[0m[0minfo[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:25:65: private method quoted in <$anon: io.ssc.export.api.database.ctx.Quoted[io.getquill.Query[Nothing]]> is never used[0m
+[0m[[0m[31merror[0m] [0m[0m  def find(id: UUID): Result[RunQueryResult[Customer]] = ctx.run(customer.filter(_.customer_id == lift(id)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/JobRepository.scala:47:9: local val req in method insertJobRecord is never used[0m
+[0m[[0m[0minfo[0m] [0m[0m    val req = Request([0m
+[0m[[0m[0minfo[0m] [0m[0m        ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/package.scala:4:21: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.getquill.{Literal, PostgresJdbcContext, SnakeCase}[0m
+[0m[[0m[0minfo[0m] [0m[0m                    ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/database/package.scala:4:30: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.getquill.{Literal, PostgresJdbcContext, SnakeCase}[0m
+[0m[[0m[0minfo[0m] [0m[0m                             ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:4:13: Unused import[0m
 [0m[[0m[0minfo[0m] [0m[0mimport cats._[0m
 [0m[[0m[0minfo[0m] [0m[0m            ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:6:23: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:6:23: Unused import[0m
 [0m[[0m[0minfo[0m] [0m[0mimport cats.implicits._[0m
 [0m[[0m[0minfo[0m] [0m[0m                      ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:7:32: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:7:32: Unused import[0m
 [0m[[0m[0minfo[0m] [0m[0mimport io.chrisdavenport.fuuid.FUUID[0m
 [0m[[0m[0minfo[0m] [0m[0m                               ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:9:19: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:8:17: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.circe.Codec[0m
+[0m[[0m[0minfo[0m] [0m[0m                ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:11:19: Unused import[0m
 [0m[[0m[0minfo[0m] [0m[0mimport org.http4s.Status[0m
 [0m[[0m[0minfo[0m] [0m[0m                  ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:10:26: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:12:26: Unused import[0m
 [0m[[0m[0minfo[0m] [0m[0mimport org.http4s.Status.BadRequest[0m
 [0m[[0m[0minfo[0m] [0m[0m                         ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:11:23: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:13:23: Unused import[0m
 [0m[[0m[0minfo[0m] [0m[0mimport shapeless.Lazy.apply[0m
 [0m[[0m[0minfo[0m] [0m[0m                      ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:17:50: Unused import[0m
-[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.{DecodeFailure, EntityDecoder, EntityEncoder}[0m
-[0m[[0m[0minfo[0m] [0m[0m                                                 ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/rghv404/GitRepos/ExportAPI/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:19:26: Unused import[0m
-[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.circe.{jsonEncoderOf, jsonOf}[0m
-[0m[[0m[0minfo[0m] [0m[0m                         ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:23:65: parameter value jobService in class JobRoutes is never used[0m
+[0m[[0m[0minfo[0m] [0m[0mclass JobRoutes[F[+_]: Effect](swaggerSyntax: SwaggerSyntax[F], jobService: JobService[F]) extends RhoRoutes[F] {[0m
+[0m[[0m[0minfo[0m] [0m[0m                                                                ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:32:16: parameter value customerId in anonymous function is never used[0m
+[0m[[0m[0minfo[0m] [0m[0m    (customerId:UUID, domains: MissingDomains) =>[0m
+[0m[[0m[0minfo[0m] [0m[0m               ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JobRoutes.scala:32:30: parameter value domains in anonymous function is never used[0m
+[0m[[0m[0minfo[0m] [0m[0m    (customerId:UUID, domains: MissingDomains) =>[0m
+[0m[[0m[0minfo[0m] [0m[0m                             ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JsonEncoder.scala:3:25: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport java.nio.charset.StandardCharsets[0m
+[0m[[0m[0minfo[0m] [0m[0m                        ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JsonEncoder.scala:5:27: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.headers.`Content-Type`[0m
+[0m[[0m[0minfo[0m] [0m[0m                          ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JsonEncoder.scala:6:20: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.{Entity, EntityEncoder, MediaType}[0m
+[0m[[0m[0minfo[0m] [0m[0m                   ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JsonEncoder.scala:6:28: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.{Entity, EntityEncoder, MediaType}[0m
+[0m[[0m[0minfo[0m] [0m[0m                           ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JsonEncoder.scala:6:43: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport org.http4s.{Entity, EntityEncoder, MediaType}[0m
+[0m[[0m[0minfo[0m] [0m[0m                                          ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JsonEncoder.scala:8:42: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport scala.collection.compat.immutable.ArraySeq[0m
+[0m[[0m[0minfo[0m] [0m[0m                                         ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/JsonEncoder.scala:11:17: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport io.circe.shapes[0m
+[0m[[0m[0minfo[0m] [0m[0m                ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/routes/MyRoutes.scala:154:16: parameter value evidence$3 in method barParser is never used[0m
+[0m[[0m[0minfo[0m] [0m[0m  implicit def barParser[F[_]: Monad]: StringParser[F, Bar] =[0m
+[0m[[0m[0minfo[0m] [0m[0m               ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/service/JobService.scala:3:14: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport cats.{Functor, MonadError}[0m
+[0m[[0m[0minfo[0m] [0m[0m             ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/service/JobService.scala:5:23: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport cats.implicits._[0m
+[0m[[0m[0minfo[0m] [0m[0m                      ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/service/JobService.scala:7:27: Unused import[0m
+[0m[[0m[0minfo[0m] [0m[0mimport cats.mtl.implicits._[0m
+[0m[[0m[0minfo[0m] [0m[0m                          ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/service/JobService.scala:13:24: parameter value repo in class JobService is never used[0m
+[0m[[0m[0minfo[0m] [0m[0mclass JobService[F[_]](repo: JobRepository[F]) {[0m
+[0m[[0m[0minfo[0m] [0m[0m                       ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/service/JobService.scala:41:5: parameter value functorRaise in method run is never used[0m
+[0m[[0m[0minfo[0m] [0m[0m    functorRaise: FunctorRaise[F, JobError][0m
+[0m[[0m[0minfo[0m] [0m[0m    ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/src/main/scala/io/ssc/export/api/service/JobService.scala:44:7: parameter value customer in anonymous function is never used[0m
+[0m[[0m[0minfo[0m] [0m[0m      customer <- findCustomerId(customerId) // either customer exist of not exist error[0m
+[0m[[0m[0minfo[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m7 errors found[0m

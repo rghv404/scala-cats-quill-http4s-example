@@ -51,10 +51,10 @@
         <parameter value="-Ywarn-macros:after" />
         <parameter value="-Ymacro-annotations" />
         <parameter value="-Yrangepos" />
-        <parameter value="-P:semanticdb:targetroot:/home/rghv404/GitRepos/ExportAPI/target/scala-2.13/meta" />
+        <parameter value="-P:semanticdb:targetroot:/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/target/scala-2.13/meta" />
       </parameters>
       <plugins>
-        <plugin path="$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.6/4.4.18/semanticdb-scalac_2.13.6-4.4.18.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.6/4.4.18/semanticdb-scalac_2.13.6-4.4.18.jar" />
       </plugins>
     </profile>
     <profile name="sbt 2" modules="api">
@@ -107,11 +107,11 @@
         <parameter value="-Ywarn-macros:after" />
         <parameter value="-Ymacro-annotations" />
         <parameter value="-Yrangepos" />
-        <parameter value="-P:semanticdb:targetroot:/home/rghv404/GitRepos/ExportAPI/api/target/scala-2.13/meta" />
+        <parameter value="-P:semanticdb:targetroot:/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/api/target/scala-2.13/meta" />
       </parameters>
       <plugins>
-        <plugin path="$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/kind-projector_2.13.6/0.13.0/kind-projector_2.13.6-0.13.0.jar" />
-        <plugin path="$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.6/4.4.18/semanticdb-scalac_2.13.6-4.4.18.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/kind-projector_2.13.6/0.13.0/kind-projector_2.13.6-0.13.0.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.6/4.4.18/semanticdb-scalac_2.13.6-4.4.18.jar" />
       </plugins>
     </profile>
     <profile name="sbt 3" modules="server">
@@ -276,11 +276,11 @@
         <parameter value="-Ywarn-macros:after" />
         <parameter value="-Ymacro-annotations" />
         <parameter value="-Yrangepos" />
-        <parameter value="-P:semanticdb:targetroot:/home/rghv404/GitRepos/ExportAPI/polling-app/target/scala-2.13/meta" />
+        <parameter value="-P:semanticdb:targetroot:/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/polling-app/target/scala-2.13/meta" />
       </parameters>
       <plugins>
-        <plugin path="$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/kind-projector_2.13.6/0.13.0/kind-projector_2.13.6-0.13.0.jar" />
-        <plugin path="$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.6/4.4.18/semanticdb-scalac_2.13.6-4.4.18.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/kind-projector_2.13.6/0.13.0/kind-projector_2.13.6-0.13.0.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.6/4.4.18/semanticdb-scalac_2.13.6-4.4.18.jar" />
       </plugins>
     </profile>
     <profile name="sbt 6" modules="sparkApp">
@@ -333,11 +333,11 @@
         <parameter value="-Ywarn-macros:after" />
         <parameter value="-Ymacro-annotations" />
         <parameter value="-Yrangepos" />
-        <parameter value="-P:semanticdb:targetroot:/home/rghv404/GitRepos/ExportAPI/spark-app/target/scala-2.13/meta" />
+        <parameter value="-P:semanticdb:targetroot:/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/spark-app/target/scala-2.13/meta" />
       </parameters>
       <plugins>
-        <plugin path="$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/kind-projector_2.13.6/0.13.0/kind-projector_2.13.6-0.13.0.jar" />
-        <plugin path="$USER_HOME$/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.6/4.4.18/semanticdb-scalac_2.13.6-4.4.18.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/typelevel/kind-projector_2.13.6/0.13.0/kind-projector_2.13.6-0.13.0.jar" />
+        <plugin path="$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.6/4.4.18/semanticdb-scalac_2.13.6-4.4.18.jar" />
       </plugins>
     </profile>
   </component>

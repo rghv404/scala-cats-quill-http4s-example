@@ -1,4 +1,4 @@
-[debug] [exportapi-build] Classpath dependencies List()
-[debug] [exportapi-build] Dependencies from configurations List()
-[debug] Bloop wrote the configuration of project 'exportapi-build' to '/home/rghv404/GitRepos/ExportAPI/project/.bloop/exportapi-build.json'
-[success] Generated .bloop/exportapi-build.json
+[debug] [scala-cats-quill-http4s-example-build] Classpath dependencies List()
+[debug] [scala-cats-quill-http4s-example-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'scala-cats-quill-http4s-example-build' to '/Users/raghvendrasingh/Desktop/PersonalRepos/scala-cats-quill-http4s-example/project/.bloop/scala-cats-quill-http4s-example-build.json'
+[success] Generated .bloop/scala-cats-quill-http4s-example-build.json

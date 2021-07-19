@@ -1,5 +1,6 @@
 package io.ssc.export.api
 
+import cats.data.EitherT
 import cats.effect.{Blocker, ConcurrentEffect, ContextShift, ExitCode, IO, IOApp, Resource, Timer}
 import com.http4s.rho.swagger.ui.SwaggerUi
 import doobie.util.ExecutionContexts
@@ -15,6 +16,7 @@ import org.http4s.server.{Router, Server => H4Server}
 import org.http4s.implicits._
 import io.ssc.`export`.api.Config._
 import io.ssc.`export`.api.database.{DatabaseConfig, JobRepository}
+import io.ssc.`export`.api.model.JobError
 import io.ssc.`export`.api.service.JobService
 import org.typelevel.log4cats.slf4j.Slf4jLogger
 import pureconfig.ConfigConvert.fromReaderAndWriter
@@ -34,7 +36,7 @@ object Main extends IOApp {
 
   logger.info(printConfigInfo())
 
-  def createServer[F[_] : ContextShift : ConcurrentEffect : Timer]: Resource[F, H4Server[F]] =
+  def createServer[F[_] : ContextShift : ConcurrentEffect : Timer]: Resource[F, H4Server[F]] = {
     for {
       serverEc                <- ExecutionContexts.cachedThreadPool[F]
       connEc                  <- ExecutionContexts.fixedThreadPool[F](10) // change later to read from conf
@@ -47,7 +49,7 @@ object Main extends IOApp {
                                                 )
       swaggerUiRhoMiddleware  =  SwaggerUi[F].createRhoMiddleware(Blocker.liftExecutionContext(serverEc), swaggerMetadata = metadata)
       routes                  =  Router("/v1" -> new MyRoutes[F](ioSwagger[F]).toRoutes(swaggerUiRhoMiddleware),
-                                        "/v1/run" -> new JobRoutes[F](ioSwagger[F]).toRoutes(swaggerUiRhoMiddleware)
+                                        "/v1/run" -> new JobRoutes[F](ioSwagger[F], jobService).toRoutes(swaggerUiRhoMiddleware)
                                         ).orNotFound
       _                       <- Resource.eval(DatabaseConfig.initializeDb(config.db))
       server                  <- BlazeServerBuilder[F](serverEc)
@@ -55,6 +57,7 @@ object Main extends IOApp {
                                   .withHttpApp(routes)
                                   .resource
     } yield server
+  }
 
   def printConfigInfo(): String = ???
 
